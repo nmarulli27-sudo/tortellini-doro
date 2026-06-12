@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "home": {
+      "title": "Tortellino d'Oro | Ristorante · Pasta fresca a Milano",
+      "description": "Trattoria d'autore nel cuore di Milano: pasta fresca tirata a mano ogni giorno, materie prime di stagione, tradizione rivisitata con misura."
+    },
+    "menu": {
+      "title": "Il Menu | Tortellino d'Oro",
+      "description": "Antipasti, pasta fresca tirata a mano, secondi e dolci della casa. Il menu del Tortellino d'Oro, tra tradizione e stagione."
+    },
+    "about": {
+      "title": "Chi siamo | Tortellino d'Oro",
+      "description": "Le origini, la filosofia e il rito della sfoglia: la storia del Tortellino d'Oro, trattoria d'autore a Milano."
+    },
+    "contact": {
+      "title": "Contatti | Tortellino d'Oro",
+      "description": "Prenota un tavolo o scrivici: indirizzo, orari, telefono e come raggiungere il Tortellino d'Oro a Milano."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "openMenu": "Apri il menu di navigazione",
+    "closeMenu": "Chiudi il menu di navigazione"
+  },
+  "hero": {
+    "title": "Tortellino d'Oro",
+    "subtitle": "La tradizione, tirata a mano ogni giorno.",
+    "ctaMenu": "Vedi il menu"
+  },
+  "story": {
+    "eyebrow": "La nostra filosofia",
+    "chapters": [
+      {
+        "eyebrow": "Capitolo I",
+        "title": "Ogni mattina alle sei",
+        "body": "Uova fresche, farina scelta, il piano di legno ancora freddo. Prima che la città si svegli, il laboratorio profuma già di sfoglia."
+      },
+      {
+        "eyebrow": "Capitolo II",
+        "title": "La sfoglia",
+        "body": "Si tira al mattarello finché non lascia passare la luce. È lì che si vede la mano, ed è lì che si decide tutto il piatto."
+      },
+      {
+        "eyebrow": "Capitolo III",
+        "title": "Il piatto",
+        "body": "Il brodo sobbolle da otto ore, i tortellini scendono per ultimi. Il resto è il tempo che vi prendete a tavola."
+      }
+    ]
+  },
+  "signature": {
+    "eyebrow": "I nostri piatti firma",
+    "title": "Tre piatti, una promessa",
+    "cta": "Esplora tutto il menu",
+    "dishes": [
+      {
+        "name": "Tortellini in brodo di cappone",
+        "description": "Sfoglia sottile, ripieno classico, brodo di otto ore.",
+        "price": "€ 18"
+      },
+      {
+        "name": "Tagliatelle al ragù bianco",
+        "description": "Ragù di corte senza pomodoro, cotto piano nel vino bianco.",
+        "price": "€ 16"
+      },
+      {
+        "name": "Tortelli di zucca e amaretti",
+        "description": "Zucca mantovana, amaretto, burro nocciola e salvia.",
+        "price": "€ 17"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "L'esperienza",
+    "title": "Una sala che parla piano",
+    "body": "Legno scuro, ceramica artigianale, lino grezzo e una luce che scalda senza abbagliare. Quaranta coperti, non uno di più: ogni tavolo ha il suo spazio e il suo tempo."
+  },
+  "experience2": {
+    "title": "Ogni dettaglio ha una mano",
+    "body": "Le ceramiche escono da un unico tornio, il lino è tessuto a pochi chilometri. Niente in sala è anonimo: dietro ogni oggetto c'è un nome."
+  },
+  "atmosphere": {
+    "eyebrow": "Atmosfera",
+    "title": "La stessa sala, due luci"
+  },
+  "visit": {
+    "eyebrow": "Vieni a trovarci",
+    "title": "Vi aspettiamo a tavola",
+    "addressLabel": "Indirizzo",
+    "hoursLabel": "Orari",
+    "phoneLabel": "Telefono",
+    "cta": "Prenota al telefono",
+    "mapCta": "Apri la mappa"
+  },
+  "common": {
+    "address": "Via dei Sarti 12, 20121 Milano",
+    "phone": "+39 02 0000 0000",
+    "phoneHref": "+390200000000",
+    "email": "info@tortellinodoro.it",
+    "hours": [
+      { "days": "Martedì — Venerdì", "times": "12:30 – 14:30 · 19:30 – 22:30" },
+      { "days": "Sabato", "times": "19:30 – 23:00" },
+      { "days": "Domenica", "times": "12:30 – 15:00" },
+      { "days": "Lunedì", "times": "Chiuso" }
+    ]
+  },
+  "menuPage": {
+    "eyebrow": "Il menu",
+    "title": "Il Menu",
+    "subtitle": "Pochi piatti, scelti ogni stagione. Tutta la pasta nasce nel nostro laboratorio.",
+    "legendVegetarian": "Piatto vegetariano",
+    "legendAllergens": "Allergeni indicati sotto ogni piatto. Per intolleranze gravi, segnalatelo alla sala.",
+    "pastaNote": "Tutta la pasta è fresca, tirata a mano nel nostro laboratorio.",
+    "allergensLabel": "Allergeni",
+    "categories": [
+      {
+        "id": "antipasti",
+        "name": "Antipasti",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Battuta di Fassona, nocciole e Castelmagno",
+            "description": "Coltello, olio ligure, una grattata di Castelmagno d'alpeggio.",
+            "price": "€ 14",
+            "vegetarian": false,
+            "allergens": "frutta a guscio, latte"
+          },
+          {
+            "name": "Carciofo alla brace, zabaione salato",
+            "description": "Cuore di carciofo cotto sulla fiamma, zabaione al Parmigiano.",
+            "price": "€ 12",
+            "vegetarian": true,
+            "allergens": "uova, latte"
+          },
+          {
+            "name": "Culatello di Zibello e gnocco fritto",
+            "description": "Stagionatura 24 mesi, gnocco fritto caldo al momento.",
+            "price": "€ 15",
+            "vegetarian": false,
+            "allergens": "glutine, latte"
+          }
+        ]
+      },
+      {
+        "id": "primi",
+        "name": "Primi — Pasta fresca",
+        "highlight": true,
+        "items": [
+          {
+            "name": "Tortellini in brodo di cappone",
+            "description": "Il piatto che ci dà il nome. Sfoglia sottile, brodo di otto ore.",
+            "price": "€ 18",
+            "vegetarian": false,
+            "allergens": "glutine, uova, latte, sedano"
+          },
+          {
+            "name": "Tagliatelle al ragù bianco",
+            "description": "Ragù di corte senza pomodoro, cottura lenta nel vino bianco.",
+            "price": "€ 16",
+            "vegetarian": false,
+            "allergens": "glutine, uova, latte, sedano"
+          },
+          {
+            "name": "Tortelli di zucca e amaretti",
+            "description": "Zucca mantovana, amaretto, burro nocciola e salvia fritta.",
+            "price": "€ 17",
+            "vegetarian": true,
+            "allergens": "glutine, uova, latte, frutta a guscio"
+          },
+          {
+            "name": "Tagliolini al limone e bottarga",
+            "description": "Sfoglia sottilissima, burro al limone, bottarga di muggine.",
+            "price": "€ 17",
+            "vegetarian": false,
+            "allergens": "glutine, uova, latte, pesce"
+          },
+          {
+            "name": "Gnocchi di patate, bordeaux e gorgonzola",
+            "description": "Gnocco leggero, riduzione al vino rosso, gorgonzola dolce DOP.",
+            "price": "€ 15",
+            "vegetarian": true,
+            "allergens": "glutine, uova, latte, solfiti"
+          }
+        ]
+      },
+      {
+        "id": "secondi",
+        "name": "Secondi",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Guancia di manzo al Barbera",
+            "description": "Cottura di dodici ore, purè di patate al burro d'alpeggio.",
+            "price": "€ 24",
+            "vegetarian": false,
+            "allergens": "latte, sedano, solfiti"
+          },
+          {
+            "name": "Faraona ripiena alle castagne",
+            "description": "Petto e coscia, ripieno di castagne e salsiccia, fondo bruno.",
+            "price": "€ 22",
+            "vegetarian": false,
+            "allergens": "frutta a guscio, sedano, solfiti"
+          },
+          {
+            "name": "Baccalà mantecato, polenta abbrustolita",
+            "description": "Mantecatura all'olio ligure, polenta di mais antico alla brace.",
+            "price": "€ 21",
+            "vegetarian": false,
+            "allergens": "pesce, latte"
+          }
+        ]
+      },
+      {
+        "id": "contorni",
+        "name": "Contorni",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Verdure di stagione alla brace",
+            "description": "Dal mercato del giorno, olio e sale di Cervia.",
+            "price": "€ 7",
+            "vegetarian": true,
+            "allergens": "—"
+          },
+          {
+            "name": "Purè di patate al burro d'alpeggio",
+            "description": "Montato al momento, generoso come dev'essere.",
+            "price": "€ 6",
+            "vegetarian": true,
+            "allergens": "latte"
+          },
+          {
+            "name": "Insalata di campo, aceto di vino vecchio",
+            "description": "Erbe amare e foglie croccanti, condite al tavolo.",
+            "price": "€ 6",
+            "vegetarian": true,
+            "allergens": "solfiti"
+          }
+        ]
+      },
+      {
+        "id": "dolci",
+        "name": "Dolci della casa",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Zuppa inglese al cucchiaio",
+            "description": "Alchermes, crema pasticcera, savoiardo fatto in casa.",
+            "price": "€ 9",
+            "vegetarian": true,
+            "allergens": "glutine, uova, latte"
+          },
+          {
+            "name": "Torta di nocciole, zabaione al Moscato",
+            "description": "Nocciola Piemonte IGP, senza farina, zabaione caldo.",
+            "price": "€ 9",
+            "vegetarian": true,
+            "allergens": "uova, frutta a guscio, solfiti"
+          },
+          {
+            "name": "Sorbetto al limone e olio d'oliva",
+            "description": "Limoni di Sorrento, olio extravergine, sale Maldon.",
+            "price": "€ 7",
+            "vegetarian": true,
+            "allergens": "—"
+          }
+        ]
+      }
+    ],
+    "wine": {
+      "name": "Carta dei vini",
+      "body": "Circa centocinquanta etichette, con un'attenzione particolare ai piccoli produttori di Langhe, Oltrepò e Appennino emiliano. La carta completa è disponibile in sala — chiedete consiglio, ci piace raccontarla.",
+      "cta": "Scarica la carta (PDF)"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "Chi siamo",
+    "title": "Una storia tirata a mano",
+    "sections": [
+      {
+        "eyebrow": "Le origini",
+        "title": "Da dove veniamo",
+        "body": "[PLACEHOLDER — la storia reale: famiglia, anno di apertura, territorio. Tono: «Tutto comincia in una cucina di provincia, dove la domenica la sfoglia copriva l'intero tavolo. Nel 20XX quella tradizione si è trasferita a Milano, con una promessa: fare poche cose, farle ogni giorno, farle a mano.»]"
+      },
+      {
+        "eyebrow": "La filosofia",
+        "title": "Tradizione rivisitata, con misura",
+        "body": "[PLACEHOLDER — fornitori e stagionalità. Tono: «Rivisitare non vuol dire stravolgere: vuol dire togliere il superfluo e ascoltare la stagione. I nostri fornitori sono nomi e facce, non listini: il Parmigiano arriva da un solo caseificio.»]"
+      },
+      {
+        "eyebrow": "La sfoglia",
+        "title": "Il rito del mattarello",
+        "body": "[PLACEHOLDER — il rito quotidiano: chi la tira, quando, come. Tono: «Alle sette del mattino il laboratorio profuma già di farina. La sfoglia si tira finché non lascia passare la luce: è lì che si decide tutto il piatto.»]"
+      }
+    ],
+    "fragments": {
+      "eyebrow": "L'archivio",
+      "title": "Frammenti"
+    },
+    "team": {
+      "eyebrow": "Il team",
+      "title": "Chi tira la sfoglia",
+      "members": [
+        { "name": "[Nome Cognome]", "role": "Chef e fondatore" },
+        { "name": "[Nome Cognome]", "role": "Sous-chef" },
+        { "name": "[Nome Cognome]", "role": "Sfoglina" },
+        { "name": "[Nome Cognome]", "role": "Responsabile di sala" }
+      ]
+    },
+    "quote": "La buona cucina è memoria che si rinnova."
+  },
+  "contactPage": {
+    "eyebrow": "Contatti",
+    "title": "Prenota un tavolo",
+    "subtitle": "Scriveteci per richieste e prenotazioni. Per il giorno stesso, meglio una telefonata.",
+    "infoTitle": "Dove siamo",
+    "addressLabel": "Indirizzo",
+    "phoneLabel": "Telefono",
+    "emailLabel": "Email",
+    "hoursTitle": "Orari di apertura",
+    "socialTitle": "Seguici",
+    "form": {
+      "title": "Scrivici",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Telefono",
+      "subject": "Oggetto",
+      "subjectGeneral": "Richiesta generale",
+      "subjectBooking": "Prenotazione",
+      "message": "Messaggio",
+      "submit": "Invia il messaggio",
+      "note": "Per prenotazioni dello stesso giorno chiamare direttamente.",
+      "mailtoNote": "L'invio apre il vostro client di posta con il messaggio già compilato."
+    },
+    "mapTitle": "Come raggiungerci",
+    "mapAria": "Mappa con la posizione del ristorante Tortellino d'Oro"
+  },
+  "footer": {
+    "contactTitle": "Contatti",
+    "hoursTitle": "Orari",
+    "socialTitle": "Social",
+    "tagline": "Trattoria d'autore · Pasta fresca tirata a mano",
+    "legal": "© Tortellino d'Oro — P.IVA 00000000000",
+    "credits": "Sito realizzato con cura."
+  }
+}

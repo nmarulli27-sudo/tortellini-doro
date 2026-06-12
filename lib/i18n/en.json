@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "home": {
+      "title": "Tortellino d'Oro | Restaurant · Fresh Pasta in Milan",
+      "description": "An author's trattoria in the heart of Milan: pasta hand-rolled every morning, seasonal ingredients, tradition revisited with restraint."
+    },
+    "menu": {
+      "title": "The Menu | Tortellino d'Oro",
+      "description": "Starters, hand-rolled fresh pasta, mains and house desserts. The Tortellino d'Oro menu, between tradition and season."
+    },
+    "about": {
+      "title": "About Us | Tortellino d'Oro",
+      "description": "Our origins, our philosophy and the daily ritual of the sfoglia: the story of Tortellino d'Oro, an author's trattoria in Milan."
+    },
+    "contact": {
+      "title": "Contact | Tortellino d'Oro",
+      "description": "Book a table or write to us: address, opening hours, phone number and how to reach Tortellino d'Oro in Milan."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About us",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
+  },
+  "hero": {
+    "title": "Tortellino d'Oro",
+    "subtitle": "Tradition, hand-rolled every single day.",
+    "ctaMenu": "See the menu"
+  },
+  "story": {
+    "eyebrow": "Our philosophy",
+    "chapters": [
+      {
+        "eyebrow": "Chapter I",
+        "title": "Every morning at six",
+        "body": "Fresh eggs, carefully chosen flour, the wooden board still cold. Before the city wakes, the workshop already smells of pasta dough."
+      },
+      {
+        "eyebrow": "Chapter II",
+        "title": "The sfoglia",
+        "body": "Rolled by hand until it lets the light through. That's where the hand shows, and that's where the whole dish is decided."
+      },
+      {
+        "eyebrow": "Chapter III",
+        "title": "The dish",
+        "body": "The broth has been simmering for eight hours; the tortellini go in last. The rest is the time you take at the table."
+      }
+    ]
+  },
+  "signature": {
+    "eyebrow": "Signature dishes",
+    "title": "Three dishes, one promise",
+    "cta": "Explore the full menu",
+    "dishes": [
+      {
+        "name": "Tortellini in capon broth",
+        "description": "Paper-thin pasta, the classic filling, an eight-hour broth.",
+        "price": "€ 18"
+      },
+      {
+        "name": "Tagliatelle with white ragù",
+        "description": "A tomato-free courtyard ragù, slowly cooked in white wine.",
+        "price": "€ 16"
+      },
+      {
+        "name": "Pumpkin and amaretti tortelli",
+        "description": "Mantuan pumpkin, amaretti, brown butter and sage.",
+        "price": "€ 17"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "The experience",
+    "title": "A dining room that speaks softly",
+    "body": "Dark wood, handmade ceramics, raw linen and a light that warms without glaring. Forty seats, not one more: every table has its own space and its own pace."
+  },
+  "experience2": {
+    "title": "Every detail has a maker",
+    "body": "The ceramics come from a single potter's wheel; the linen is woven a few kilometres away. Nothing in the room is anonymous: behind every object there is a name."
+  },
+  "atmosphere": {
+    "eyebrow": "Atmosphere",
+    "title": "The same room, two lights"
+  },
+  "visit": {
+    "eyebrow": "Come and find us",
+    "title": "Your table is waiting",
+    "addressLabel": "Address",
+    "hoursLabel": "Hours",
+    "phoneLabel": "Phone",
+    "cta": "Book by phone",
+    "mapCta": "Open the map"
+  },
+  "common": {
+    "address": "Via dei Sarti 12, 20121 Milan, Italy",
+    "phone": "+39 02 0000 0000",
+    "phoneHref": "+390200000000",
+    "email": "info@tortellinodoro.it",
+    "hours": [
+      { "days": "Tuesday — Friday", "times": "12:30 – 2:30 pm · 7:30 – 10:30 pm" },
+      { "days": "Saturday", "times": "7:30 – 11:00 pm" },
+      { "days": "Sunday", "times": "12:30 – 3:00 pm" },
+      { "days": "Monday", "times": "Closed" }
+    ]
+  },
+  "menuPage": {
+    "eyebrow": "The menu",
+    "title": "The Menu",
+    "subtitle": "A short menu, chosen with the seasons. All our pasta is born in our workshop.",
+    "legendVegetarian": "Vegetarian dish",
+    "legendAllergens": "Allergens are listed under each dish. For severe intolerances, please tell our staff.",
+    "pastaNote": "All our pasta is fresh, hand-rolled in our own workshop.",
+    "allergensLabel": "Allergens",
+    "categories": [
+      {
+        "id": "antipasti",
+        "name": "Starters",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Hand-cut Fassona beef, hazelnuts and Castelmagno",
+            "description": "Knife-cut, Ligurian olive oil, shavings of alpine Castelmagno.",
+            "price": "€ 14",
+            "vegetarian": false,
+            "allergens": "tree nuts, milk"
+          },
+          {
+            "name": "Charcoal-grilled artichoke, savoury zabaione",
+            "description": "Artichoke heart cooked over the flame, Parmigiano zabaione.",
+            "price": "€ 12",
+            "vegetarian": true,
+            "allergens": "eggs, milk"
+          },
+          {
+            "name": "Culatello di Zibello with gnocco fritto",
+            "description": "Aged 24 months, gnocco fritto fried to order.",
+            "price": "€ 15",
+            "vegetarian": false,
+            "allergens": "gluten, milk"
+          }
+        ]
+      },
+      {
+        "id": "primi",
+        "name": "Primi — Fresh Pasta",
+        "highlight": true,
+        "items": [
+          {
+            "name": "Tortellini in capon broth",
+            "description": "The dish we are named after. Paper-thin pasta, an eight-hour broth.",
+            "price": "€ 18",
+            "vegetarian": false,
+            "allergens": "gluten, eggs, milk, celery"
+          },
+          {
+            "name": "Tagliatelle with white ragù",
+            "description": "A tomato-free courtyard ragù, slowly cooked in white wine.",
+            "price": "€ 16",
+            "vegetarian": false,
+            "allergens": "gluten, eggs, milk, celery"
+          },
+          {
+            "name": "Pumpkin and amaretti tortelli",
+            "description": "Mantuan pumpkin, amaretti, brown butter and crisp sage.",
+            "price": "€ 17",
+            "vegetarian": true,
+            "allergens": "gluten, eggs, milk, tree nuts"
+          },
+          {
+            "name": "Tagliolini with lemon and bottarga",
+            "description": "The thinnest of pasta, lemon butter, grey mullet bottarga.",
+            "price": "€ 17",
+            "vegetarian": false,
+            "allergens": "gluten, eggs, milk, fish"
+          },
+          {
+            "name": "Potato gnocchi, red wine and gorgonzola",
+            "description": "Featherlight gnocchi, red wine reduction, sweet gorgonzola DOP.",
+            "price": "€ 15",
+            "vegetarian": true,
+            "allergens": "gluten, eggs, milk, sulphites"
+          }
+        ]
+      },
+      {
+        "id": "secondi",
+        "name": "Mains",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Beef cheek braised in Barbera",
+            "description": "Twelve hours of slow cooking, mashed potatoes with alpine butter.",
+            "price": "€ 24",
+            "vegetarian": false,
+            "allergens": "milk, celery, sulphites"
+          },
+          {
+            "name": "Guinea fowl stuffed with chestnuts",
+            "description": "Breast and leg, chestnut and sausage stuffing, dark jus.",
+            "price": "€ 22",
+            "vegetarian": false,
+            "allergens": "tree nuts, celery, sulphites"
+          },
+          {
+            "name": "Whipped salt cod, charred polenta",
+            "description": "Whipped with Ligurian olive oil, heritage-corn polenta off the grill.",
+            "price": "€ 21",
+            "vegetarian": false,
+            "allergens": "fish, milk"
+          }
+        ]
+      },
+      {
+        "id": "contorni",
+        "name": "Sides",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Charcoal-grilled seasonal vegetables",
+            "description": "From the morning market, olive oil and Cervia sea salt.",
+            "price": "€ 7",
+            "vegetarian": true,
+            "allergens": "—"
+          },
+          {
+            "name": "Mashed potatoes with alpine butter",
+            "description": "Whipped to order, as generous as it should be.",
+            "price": "€ 6",
+            "vegetarian": true,
+            "allergens": "milk"
+          },
+          {
+            "name": "Field greens, aged wine vinegar",
+            "description": "Bitter herbs and crisp leaves, dressed at the table.",
+            "price": "€ 6",
+            "vegetarian": true,
+            "allergens": "sulphites"
+          }
+        ]
+      },
+      {
+        "id": "dolci",
+        "name": "House Desserts",
+        "highlight": false,
+        "items": [
+          {
+            "name": "Zuppa inglese, served by the spoonful",
+            "description": "Alchermes, crème pâtissière, house-made savoiardi.",
+            "price": "€ 9",
+            "vegetarian": true,
+            "allergens": "gluten, eggs, milk"
+          },
+          {
+            "name": "Hazelnut cake, Moscato zabaione",
+            "description": "Piedmont hazelnut IGP, flourless, warm zabaione.",
+            "price": "€ 9",
+            "vegetarian": true,
+            "allergens": "eggs, tree nuts, sulphites"
+          },
+          {
+            "name": "Lemon and olive oil sorbet",
+            "description": "Sorrento lemons, extra-virgin olive oil, Maldon salt.",
+            "price": "€ 7",
+            "vegetarian": true,
+            "allergens": "—"
+          }
+        ]
+      }
+    ],
+    "wine": {
+      "name": "Wine List",
+      "body": "Around one hundred and fifty labels, with a soft spot for small producers from the Langhe, Oltrepò and the Emilian Apennines. The full list is available in the dining room — ask us, we love talking about it.",
+      "cta": "Download the list (PDF)"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": "About us",
+    "title": "A story rolled by hand",
+    "sections": [
+      {
+        "eyebrow": "Our origins",
+        "title": "Where we come from",
+        "body": "[PLACEHOLDER — the real story: family, opening year, territory. Tone: \"It all begins in a small-town kitchen, where on Sundays the pasta dough covered the whole table. In 20XX that tradition moved to Milan, with one promise: do few things, do them every day, do them by hand.\"]"
+      },
+      {
+        "eyebrow": "Our philosophy",
+        "title": "Tradition revisited, with restraint",
+        "body": "[PLACEHOLDER — suppliers and seasonality. Tone: \"Revisiting doesn't mean distorting: it means removing the unnecessary and listening to the season. Our suppliers are names and faces, not price lists: the Parmigiano comes from a single dairy.\"]"
+      },
+      {
+        "eyebrow": "The sfoglia",
+        "title": "The ritual of the rolling pin",
+        "body": "[PLACEHOLDER — the daily ritual: who rolls it, when, how. Tone: \"At seven in the morning the workshop already smells of flour. The dough is rolled until it lets the light through: that's where the whole dish is decided.\"]"
+      }
+    ],
+    "fragments": {
+      "eyebrow": "The archive",
+      "title": "Fragments"
+    },
+    "team": {
+      "eyebrow": "The team",
+      "title": "The hands behind the pasta",
+      "members": [
+        { "name": "[Full Name]", "role": "Chef and founder" },
+        { "name": "[Full Name]", "role": "Sous-chef" },
+        { "name": "[Full Name]", "role": "Sfoglina" },
+        { "name": "[Full Name]", "role": "Front of house" }
+      ]
+    },
+    "quote": "Good cooking is memory, renewed."
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Book a table",
+    "subtitle": "Write to us for requests and reservations. For same-day bookings, a phone call works best.",
+    "infoTitle": "Where we are",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "hoursTitle": "Opening hours",
+    "socialTitle": "Follow us",
+    "form": {
+      "title": "Write to us",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "subjectGeneral": "General enquiry",
+      "subjectBooking": "Reservation",
+      "message": "Message",
+      "submit": "Send message",
+      "note": "For same-day reservations, please call us directly.",
+      "mailtoNote": "Sending opens your email client with the message already filled in."
+    },
+    "mapTitle": "How to reach us",
+    "mapAria": "Map showing the location of the Tortellino d'Oro restaurant"
+  },
+  "footer": {
+    "contactTitle": "Contact",
+    "hoursTitle": "Hours",
+    "socialTitle": "Social",
+    "tagline": "Author's trattoria · Hand-rolled fresh pasta",
+    "legal": "© Tortellino d'Oro — VAT IT00000000000",
+    "credits": "Made with care."
+  }
+}
