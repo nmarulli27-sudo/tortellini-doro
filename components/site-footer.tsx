@@ -76,9 +76,15 @@ export function SiteFooter({
                 <FacebookIcon size={20} />
               </a>
             </div>
-            <p className="mt-8">
+            <p className="mt-8 flex flex-col gap-3">
               <Link
-                href={`/${locale}/contatti`}
+                href={`/${locale}/eventi`}
+                className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream-muted underline decoration-gold/40 underline-offset-4 transition-colors hover:text-cream"
+              >
+                {dict.nav.eventi} →
+              </Link>
+              <Link
+                href={`/${locale}/prenota`}
                 className="font-mono text-[11px] uppercase tracking-[0.2em] text-cream-muted underline decoration-gold/40 underline-offset-4 transition-colors hover:text-cream"
               >
                 {dict.nav.contact} →
@@ -87,9 +93,17 @@ export function SiteFooter({
           </div>
         </div>
 
-        <div className="mt-16 flex flex-col gap-2 border-t border-line/60 pt-6 text-xs text-cream-muted/70 sm:flex-row sm:justify-between">
+        <div className="mt-16 flex flex-col gap-3 border-t border-line/60 pt-6 text-xs text-cream-muted/70 sm:flex-row sm:items-center sm:justify-between">
           <p>{footer.legal}</p>
-          <p>{footer.credits}</p>
+          <div className="flex items-center gap-5">
+            <Link
+              href={`/${locale}/privacy`}
+              className="underline decoration-gold/40 underline-offset-4 transition-colors hover:text-cream"
+            >
+              {footer.privacy}
+            </Link>
+            <span>{footer.credits}</span>
+          </div>
         </div>
       </Reveal>
     </footer>

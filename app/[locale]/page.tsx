@@ -243,7 +243,7 @@ export default async function HomePage({
               <a href={`tel:${dict.common.phoneHref}`} className="btn btn-fill">
                 {dict.visit.cta}
               </a>
-              <Link href={`/${locale}/contatti`} className="btn btn-outline">
+              <Link href={`/${locale}/prenota`} className="btn btn-outline">
                 {dict.visit.mapCta}
               </Link>
             </div>

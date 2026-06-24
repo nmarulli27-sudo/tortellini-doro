@@ -8,7 +8,7 @@ import { shots } from "@/lib/shots";
 import { Reveal, RevealImage } from "@/components/reveal";
 import { ImagePlaceholder } from "@/components/image-placeholder";
 import { FullBleed } from "@/components/full-bleed";
-import { ContactForm } from "@/components/contact-form";
+import { BookingForm } from "@/components/booking-form";
 
 export async function generateMetadata({
   params,
@@ -28,12 +28,12 @@ export async function generateMetadata({
       locale: locale === "it" ? "it_IT" : "en_US",
     },
     alternates: {
-      languages: Object.fromEntries(locales.map((l) => [l, `/${l}/contatti`])),
+      languages: Object.fromEntries(locales.map((l) => [l, `/${l}/prenota`])),
     },
   };
 }
 
-export default async function ContactPage({
+export default async function BookingPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -58,18 +58,47 @@ export default async function ContactPage({
         </div>
       </FullBleed>
 
-      {/* Info + form, con foto verticale che le accompagna */}
+      {/* Form di prenotazione: primo blocco, con foto verticale che lo accompagna */}
       <section className="py-20 lg:py-28">
         <div className="mx-auto grid max-w-[1200px] gap-16 px-6 lg:grid-cols-[7fr_5fr] lg:gap-20">
-          <div>
-            {/* Blocco informazioni */}
-            <Reveal>
-              <h2 className="font-display text-3xl font-light text-cream">
-                {t.infoTitle}
-              </h2>
-              <div className="filetto mt-6" />
+          <Reveal>
+            <h2 className="font-display text-3xl font-light text-cream">
+              {t.form.title}
+            </h2>
+            <div className="filetto mt-6" />
+            <div className="mt-8">
+              <BookingForm labels={t.form} locale={locale} />
+            </div>
+          </Reveal>
 
-              <dl className="mt-8 space-y-6 text-sm">
+          {/* Foto verticale: tavolo apparecchiato, resta a fianco nello scroll */}
+          <RevealImage delay={0.15} className="hidden lg:block">
+            <div className="sticky top-28">
+              <ImagePlaceholder
+                shot={shots.contattiVerticale}
+                aspect="3/4"
+                tone="dark"
+                vignette
+              />
+            </div>
+          </RevealImage>
+        </div>
+      </section>
+
+      {/* Dove siamo: indirizzo, orari, social */}
+      <section className="border-t border-line/60 py-20 lg:py-28">
+        <div className="mx-auto max-w-[1200px] px-6">
+          <Reveal>
+            <h2 className="font-display text-3xl font-light text-cream">
+              {t.infoTitle}
+            </h2>
+            <div className="filetto mt-6" />
+          </Reveal>
+
+          <div className="mt-10 grid gap-12 md:grid-cols-3 md:gap-10">
+            {/* Recapiti */}
+            <Reveal>
+              <dl className="space-y-6 text-sm">
                 <div className="flex gap-4">
                   <MapPin size={18} className="mt-0.5 shrink-0 text-gold" aria-hidden />
                   <div>
@@ -108,9 +137,12 @@ export default async function ContactPage({
                   </div>
                 </div>
               </dl>
+            </Reveal>
 
-              <h3 className="eyebrow mt-12">{t.hoursTitle}</h3>
-              <table className="mt-4 w-full max-w-md text-sm">
+            {/* Orari */}
+            <Reveal delay={0.05}>
+              <h3 className="eyebrow">{t.hoursTitle}</h3>
+              <table className="mt-4 w-full text-sm">
                 <tbody>
                   {dict.common.hours.map((row) => (
                     <tr key={row.days} className="border-b border-line/50">
@@ -125,8 +157,11 @@ export default async function ContactPage({
                   ))}
                 </tbody>
               </table>
+            </Reveal>
 
-              <h3 className="eyebrow mt-12">{t.socialTitle}</h3>
+            {/* Social */}
+            <Reveal delay={0.1}>
+              <h3 className="eyebrow">{t.socialTitle}</h3>
               <div className="mt-4 flex gap-5">
                 <a
                   href="https://instagram.com"
@@ -144,30 +179,7 @@ export default async function ContactPage({
                 </a>
               </div>
             </Reveal>
-
-            {/* Form */}
-            <Reveal delay={0.1} className="mt-16">
-              <h2 className="font-display text-3xl font-light text-cream">
-                {t.form.title}
-              </h2>
-              <div className="filetto mt-6" />
-              <div className="mt-8">
-                <ContactForm labels={t.form} email={dict.common.email} />
-              </div>
-            </Reveal>
           </div>
-
-          {/* Foto verticale: tavolo apparecchiato, resta a fianco nello scroll */}
-          <RevealImage delay={0.15} className="hidden lg:block">
-            <div className="sticky top-28">
-              <ImagePlaceholder
-                shot={shots.contattiVerticale}
-                aspect="3/4"
-                tone="dark"
-                vignette
-              />
-            </div>
-          </RevealImage>
         </div>
       </section>
 

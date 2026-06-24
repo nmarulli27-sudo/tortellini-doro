@@ -13,15 +13,24 @@
       "description": "Our origins, our philosophy and the daily ritual of the sfoglia: the story of Tortellino d'Oro, an author's trattoria in Milan."
     },
     "contact": {
-      "title": "Contact | Tortellino d'Oro",
-      "description": "Book a table or write to us: address, opening hours, phone number and how to reach Tortellino d'Oro in Milan."
+      "title": "Book a table | Tortellino d'Oro",
+      "description": "Book a table at Tortellino d'Oro online: choose your date, time and number of guests. Address, hours and how to reach us in Milan."
+    },
+    "eventi": {
+      "title": "Private Events | Tortellino d'Oro",
+      "description": "Private dinners, banquets and corporate events at Tortellino d'Oro. Tell us about your occasion and we'll get in touch to plan every detail together."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Tortellino d'Oro",
+      "description": "How we handle your personal data under the GDPR: what we collect through bookings, why, who we share it with, and the rights you have."
     }
   },
   "nav": {
     "home": "Home",
     "menu": "Menu",
     "about": "About us",
-    "contact": "Contact",
+    "eventi": "Events",
+    "contact": "Book",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
   },
@@ -313,9 +322,9 @@
     "quote": "Good cooking is memory, renewed."
   },
   "contactPage": {
-    "eyebrow": "Contact",
+    "eyebrow": "Reservations",
     "title": "Book a table",
-    "subtitle": "Write to us for requests and reservations. For same-day bookings, a phone call works best.",
+    "subtitle": "Choose your date, time and number of guests — we'll confirm as soon as we can. For same-day bookings, a phone call works best.",
     "infoTitle": "Where we are",
     "addressLabel": "Address",
     "phoneLabel": "Phone",
@@ -323,26 +332,241 @@
     "hoursTitle": "Opening hours",
     "socialTitle": "Follow us",
     "form": {
-      "title": "Write to us",
-      "name": "Name",
+      "title": "Your reservation",
+      "name": "Full name",
       "email": "Email",
       "phone": "Phone",
-      "subject": "Subject",
-      "subjectGeneral": "General enquiry",
-      "subjectBooking": "Reservation",
-      "message": "Message",
-      "submit": "Send message",
-      "note": "For same-day reservations, please call us directly.",
-      "mailtoNote": "Sending opens your email client with the message already filled in."
+      "date": "Date",
+      "time": "Time",
+      "datePlaceholder": "Pick a date",
+      "timePlaceholder": "Pick a time",
+      "lunch": "Lunch",
+      "dinner": "Dinner",
+      "selectDateTime": "Please pick a date and time to continue.",
+      "guests": "Guests",
+      "guestsPlaceholder": "No. of people",
+      "notes": "Notes",
+      "notesPlaceholder": "Allergies, special occasions…",
+      "optional": "optional",
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "successEyebrow": "Reservation received",
+      "successTitle": "Thank you!",
+      "success": "You'll receive a confirmation email as soon as the restaurant has accepted your reservation.",
+      "error": "Something went wrong. Please try again, or call us.",
+      "note": "For same-day reservations, please call us directly."
     },
     "mapTitle": "How to reach us",
     "mapAria": "Map showing the location of the Tortellino d'Oro restaurant"
+  },
+  "eventiPage": {
+    "eyebrow": "Private events",
+    "title": "Your event, rolled by hand",
+    "subtitle": "Private dinners, celebrations, banquets and corporate gatherings: we open our dining room — or just part of it — for occasions that deserve the same care as our pasta.",
+    "intro": {
+      "eyebrow": "The service",
+      "title": "A dining room that becomes yours",
+      "body": "From a table set aside for a few to the exclusive use of the whole place, we build every event around the people living it. The same workshop, the same fresh pasta hand-rolled each morning, but a menu and a pace meant only for you. Forty seats, not one more: every occasion has its own space and its own time."
+    },
+    "formatsTitle": "The occasions we host",
+    "formats": [
+      {
+        "title": "Private dinners",
+        "description": "Birthdays, anniversaries, family dinners. A tailored menu and a corner of the room that's all yours, with the kitchen working around your evening."
+      },
+      {
+        "title": "Banquets & celebrations",
+        "description": "Christenings, graduations, important toasts. The whole room exclusively yours, dedicated service and courses planned together, from the sfoglia to dessert."
+      },
+      {
+        "title": "Corporate events",
+        "description": "Working dinners, launches, team lunches. Reserved spaces, timing tuned to your programme and a kitchen that never becomes background noise."
+      }
+    ],
+    "detail": {
+      "eyebrow": "The menu",
+      "title": "Built together, course by course",
+      "body": "There's no pre-printed events menu. We start from the season and your occasion, choose the courses, match the cellar and account for allergies and intolerances. You tell us the idea; we translate it onto the table."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "From request to table",
+      "note": "Once we receive your request, we get in touch personally to discuss the organisation together: date, number of guests, menu and every detail of the event.",
+      "steps": [
+        {
+          "title": "1 · Tell us about the occasion",
+          "body": "Fill in the form below with the type of event and a few notes: the more detail you give us, the better we can reply."
+        },
+        {
+          "title": "2 · We get back to you",
+          "body": "We write or call to understand the date, number of guests and wishes, and to plan the menu and spaces together."
+        },
+        {
+          "title": "3 · We settle the details",
+          "body": "We agree on menu, timing and a quote. When it all adds up, the date is yours."
+        }
+      ]
+    },
+    "form": {
+      "title": "Request information",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "eventType": "Type of event",
+      "eventTypePlaceholder": "E.g. birthday dinner, corporate event…",
+      "notes": "Notes",
+      "notesPlaceholder": "Approximate date, number of guests, ideas or special requests…",
+      "optional": "optional",
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "successEyebrow": "Request received",
+      "successTitle": "Thank you!",
+      "success": "We've received your request. We'll get back to you soon to plan your event together.",
+      "error": "Something went wrong. Please try again, or call us.",
+      "note": "We'll get in touch to settle every detail of the event together."
+    }
+  },
+  "confermaPage": {
+    "eyebrow": "Reservation",
+    "pendingTitle": "Confirm the reservation",
+    "pendingIntro": "Review the details and choose whether to confirm or decline. The guest will receive an email only after confirmation.",
+    "confirmedTitle": "Reservation confirmed",
+    "confirmedIntro": "We've sent the confirmation to the guest. See you soon.",
+    "rejectedTitle": "Reservation declined",
+    "rejectedIntro": "The reservation has been marked as declined. No email was sent to the guest.",
+    "notFoundTitle": "Reservation not found",
+    "notFoundIntro": "This link is invalid or the reservation no longer exists.",
+    "statusLabel": "Status",
+    "status": {
+      "in_attesa": "Pending",
+      "confermata": "Confirmed",
+      "rifiutata": "Declined"
+    },
+    "fields": {
+      "nome": "Name",
+      "email": "Email",
+      "telefono": "Phone",
+      "data": "Date",
+      "ora": "Time",
+      "coperti": "Guests",
+      "note": "Notes"
+    },
+    "confirm": "Confirm",
+    "reject": "Decline",
+    "empty": "—"
+  },
+  "privacyPage": {
+    "eyebrow": "Privacy notice",
+    "title": "Privacy Policy",
+    "subtitle": "How we collect, use and protect your personal data when you book a table or get in touch.",
+    "updatedLabel": "Last updated",
+    "updatedDate": "[PLACEHOLDER — publication date]",
+    "intro": "This notice explains how Tortellino d'Oro processes the personal data collected through this website, in particular via the booking form, in accordance with Regulation (EU) 2016/679 (GDPR) and applicable data-protection law.",
+    "tocLabel": "On this page",
+    "controller": {
+      "title": "Data controller",
+      "body": "The data controller is Tortellino d'Oro, located at Via dei Sarti 12, 20121 Milan, Italy. For any request regarding your personal data, you can write to us at the email address below.",
+      "note": "[PLACEHOLDER — full legal name, VAT number and, if appointed, the contact details of the Data Protection Officer (DPO).]"
+    },
+    "data": {
+      "title": "What data we collect",
+      "intro": "Through the booking form we collect the data you provide directly:",
+      "items": [
+        "First and last name",
+        "Email address",
+        "Phone number",
+        "Date and time of the booking",
+        "Number of guests",
+        "Notes (optional field)"
+      ]
+    },
+    "health": {
+      "title": "Data about allergies and intolerances",
+      "body": [
+        "The notes field is optional and may contain information about food allergies or intolerances. Such information constitutes health data, a special category of personal data under Article 9 of the GDPR.",
+        "We process this data solely to handle your booking safely and welcome you appropriately, and only where you provide it spontaneously, on a voluntary basis.",
+        "We ask you to enter in the notes field only the information that is strictly necessary, and not to share sensitive data that is not essential to the booking."
+      ]
+    },
+    "purposes": {
+      "title": "Purposes and legal bases",
+      "intro": "We process your data for the following purposes, each with its own legal basis:",
+      "items": [
+        {
+          "purpose": "Managing your booking and sending you the confirmation",
+          "basis": "Performance of pre-contractual and contractual measures — Art. 6(1)(b) GDPR"
+        },
+        {
+          "purpose": "Keeping a history of bookings and monitoring how the restaurant is doing through internal statistics",
+          "basis": "The controller's legitimate interest in running and improving the service — Art. 6(1)(f) GDPR"
+        },
+        {
+          "purpose": "Processing any information about allergies or intolerances entered in the notes field",
+          "basis": "Consent, on a voluntary basis, for special categories of data — Art. 9(2)(a) GDPR"
+        }
+      ]
+    },
+    "recipients": {
+      "title": "Who we share data with",
+      "intro": "To deliver the service we rely on a few external providers, which process data on our behalf as data processors:",
+      "items": [
+        {
+          "name": "Supabase",
+          "detail": "The database where bookings are stored. The servers used are located in the European Union (Frankfurt, Germany): the data stays within the EU."
+        },
+        {
+          "name": "Resend",
+          "detail": "Sending booking notification and confirmation emails. The provider is based in the United States: processing may involve transfers of data outside the EU, based on Standard Contractual Clauses and/or the EU-US Data Privacy Framework."
+        },
+        {
+          "name": "Cloudflare",
+          "detail": "Hosting and delivery of the website. Here too, transfers of data outside the EU may occur, based on Standard Contractual Clauses and/or the EU-US Data Privacy Framework."
+        }
+      ],
+      "note": "We do not sell or share your data with third parties for marketing purposes."
+    },
+    "transfers": {
+      "title": "Transfers outside the European Union",
+      "body": "Some providers may process data outside the European Union. In such cases, the transfer takes place in compliance with the GDPR, on the basis of appropriate safeguards such as the Standard Contractual Clauses approved by the European Commission and/or the provider's certification under the EU-US Data Privacy Framework."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "body": [
+        "This site uses only technical and essential cookies. Specifically, a single session cookie is used, exclusively by the restaurant's staff to access the reserved area.",
+        "We do not use profiling or analytics cookies for visitors. For this reason, browsing the site does not require any cookie-consent banner."
+      ]
+    },
+    "retention": {
+      "title": "How long we keep your data",
+      "body": "We keep booking data for as long as necessary to manage the booking and to comply with legal obligations (for example accounting and tax requirements), after which the data is deleted or anonymised.",
+      "note": "[PLACEHOLDER — precise retention period to be agreed with the restaurant, e.g. months for internal statistics and years for documents with tax relevance.]"
+    },
+    "rights": {
+      "title": "Your rights",
+      "intro": "As a data subject, you may exercise the rights provided by Articles 15-22 of the GDPR at any time:",
+      "items": [
+        "Access to your personal data",
+        "Rectification of inaccurate or incomplete data",
+        "Erasure of your data (the right to be forgotten)",
+        "Restriction of processing",
+        "Data portability",
+        "Objection to processing based on legitimate interest",
+        "Withdrawal of consent at any time, without affecting the lawfulness of processing carried out before withdrawal"
+      ],
+      "contactLabel": "To exercise these rights, write to us at",
+      "complaint": "You also have the right to lodge a complaint with the competent supervisory authority, the Italian Data Protection Authority (Garante per la protezione dei dati personali, www.garanteprivacy.it), if you believe that the processing of your data infringes applicable law."
+    },
+    "changes": {
+      "title": "Changes to this notice",
+      "body": "We may update this notice over time. The version in force is always the one published on this page, with its last-updated date shown above."
+    }
   },
   "footer": {
     "contactTitle": "Contact",
     "hoursTitle": "Hours",
     "socialTitle": "Social",
     "tagline": "Author's trattoria · Hand-rolled fresh pasta",
+    "privacy": "Privacy",
     "legal": "© Tortellino d'Oro — VAT IT00000000000",
     "credits": "Made with care."
   }

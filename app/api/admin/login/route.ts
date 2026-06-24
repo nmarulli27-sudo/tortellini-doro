@@ -1,0 +1,35 @@
+import { NextResponse } from "next/server";
+import {
+  ADMIN_COOKIE,
+  ADMIN_SESSION_MAX_AGE,
+  adminSessionValue,
+  verifyPassword,
+} from "@/lib/admin-auth";
+
+export const runtime = "nodejs";
+
+export async function POST(request: Request) {
+  const form = await request.formData();
+  const password = form.get("password")?.toString() ?? "";
+
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? new URL(request.url).origin;
+
+  // Password errata: torno al login con l'avviso (nessun cookie impostato).
+  if (!verifyPassword(password)) {
+    return NextResponse.redirect(
+      new URL("/it/admin/login?error=1", base),
+      303,
+    );
+  }
+
+  // Password corretta: imposto il cookie di sessione e vado alla dashboard.
+  const res = NextResponse.redirect(new URL("/it/admin", base), 303);
+  res.cookies.set(ADMIN_COOKIE, adminSessionValue(), {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    maxAge: ADMIN_SESSION_MAX_AGE,
+  });
+  return res;
+}

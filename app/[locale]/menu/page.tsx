@@ -55,6 +55,101 @@ const anchorShots: Record<string, Shot> = {
   dolci: shots.menuDolci,
 };
 
+/* Riga piatto: nome + prezzo + descrizione + allergeni.
+   Componente di presentazione senza stato, a livello di modulo. */
+function ItemText({
+  item,
+  vegLabel,
+  allergensLabel,
+  compact = false,
+}: {
+  item: MenuItem;
+  vegLabel: string;
+  allergensLabel: string;
+  compact?: boolean;
+}) {
+  return (
+    <>
+      <div className="flex items-baseline justify-between gap-6">
+        <h3
+          className={cn(
+            "font-display font-light leading-snug text-cream",
+            compact ? "text-xl" : "text-2xl sm:text-3xl",
+          )}
+        >
+          {item.name}
+          {item.vegetarian && (
+            <Leaf
+              size={14}
+              aria-label={vegLabel}
+              className="ml-2 inline-block text-gold"
+            />
+          )}
+        </h3>
+        <p className="shrink-0 font-mono text-sm tracking-wider text-gold">
+          {item.price}
+        </p>
+      </div>
+      <p className="mt-2 max-w-prose text-sm font-extralight leading-relaxed text-cream-muted">
+        {item.description}
+      </p>
+      <p className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-cream-muted/60">
+        {allergensLabel}: {item.allergens}
+      </p>
+    </>
+  );
+}
+
+/* Categoria compatta: lista testuale + foto àncora verticale a lato */
+function CompactCategory({
+  category,
+  vegLabel,
+  allergensLabel,
+}: {
+  category: { id: string; name: string; items: MenuItem[] };
+  vegLabel: string;
+  allergensLabel: string;
+}) {
+  const anchor = anchorShots[category.id];
+  return (
+    <section aria-labelledby={`cat-${category.id}`} className="mx-auto max-w-[1200px] px-6">
+      <div className={cn("grid gap-12", anchor && "lg:grid-cols-[7fr_5fr]")}>
+        <Reveal>
+          <h2
+            id={`cat-${category.id}`}
+            className="font-display text-3xl font-light text-cream sm:text-4xl"
+          >
+            {category.name}
+          </h2>
+          <div className="filetto mt-6" />
+          <ul>
+            {category.items.map((item) => (
+              <li
+                key={item.name}
+                className="border-b border-line/50 py-6 last:border-b-0"
+              >
+                <ItemText
+                  item={item}
+                  compact
+                  vegLabel={vegLabel}
+                  allergensLabel={allergensLabel}
+                />
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+        {anchor && (
+          <RevealImage delay={0.15} className="hidden lg:block">
+            <div className="sticky top-28">
+              <ImagePlaceholder shot={anchor} aspect="3/4" tone="dark" />
+            </div>
+          </RevealImage>
+        )}
+      </div>
+    </section>
+  );
+}
+
 export default async function MenuPage({
   params,
 }: {
@@ -66,86 +161,7 @@ export default async function MenuPage({
   const t = dict.menuPage;
 
   const vegLabel = t.legendVegetarian;
-
-  function ItemText({
-    item,
-    compact = false,
-  }: {
-    item: MenuItem;
-    compact?: boolean;
-  }) {
-    return (
-      <>
-        <div className="flex items-baseline justify-between gap-6">
-          <h3
-            className={cn(
-              "font-display font-light leading-snug text-cream",
-              compact ? "text-xl" : "text-2xl sm:text-3xl",
-            )}
-          >
-            {item.name}
-            {item.vegetarian && (
-              <Leaf
-                size={14}
-                aria-label={vegLabel}
-                className="ml-2 inline-block text-gold"
-              />
-            )}
-          </h3>
-          <p className="shrink-0 font-mono text-sm tracking-wider text-gold">
-            {item.price}
-          </p>
-        </div>
-        <p className="mt-2 max-w-prose text-sm font-extralight leading-relaxed text-cream-muted">
-          {item.description}
-        </p>
-        <p className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.15em] text-cream-muted/60">
-          {t.allergensLabel}: {item.allergens}
-        </p>
-      </>
-    );
-  }
-
-  /* Categoria compatta: lista testuale + foto àncora verticale a lato */
-  function CompactCategory({
-    category,
-  }: {
-    category: { id: string; name: string; items: MenuItem[] };
-  }) {
-    const anchor = anchorShots[category.id];
-    return (
-      <section aria-labelledby={`cat-${category.id}`} className="mx-auto max-w-[1200px] px-6">
-        <div className={cn("grid gap-12", anchor && "lg:grid-cols-[7fr_5fr]")}>
-          <Reveal>
-            <h2
-              id={`cat-${category.id}`}
-              className="font-display text-3xl font-light text-cream sm:text-4xl"
-            >
-              {category.name}
-            </h2>
-            <div className="filetto mt-6" />
-            <ul>
-              {category.items.map((item) => (
-                <li
-                  key={item.name}
-                  className="border-b border-line/50 py-6 last:border-b-0"
-                >
-                  <ItemText item={item} compact />
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-          {anchor && (
-            <RevealImage delay={0.15} className="hidden lg:block">
-              <div className="sticky top-28">
-                <ImagePlaceholder shot={anchor} aspect="3/4" tone="dark" />
-              </div>
-            </RevealImage>
-          )}
-        </div>
-      </section>
-    );
-  }
+  const allergensLabel = t.allergensLabel;
 
   const categories = t.categories;
   const antipasti = categories.find((c) => c.id === "antipasti")!;
@@ -184,7 +200,11 @@ export default async function MenuPage({
 
       <div className="space-y-24 py-20 lg:space-y-28">
         {/* Antipasti — compatta con àncora visiva */}
-        <CompactCategory category={antipasti} />
+        <CompactCategory
+          category={antipasti}
+          vegLabel={vegLabel}
+          allergensLabel={allergensLabel}
+        />
 
         {/* Primi — editoriale: una foto grande dedicata per piatto */}
         <section
@@ -231,7 +251,11 @@ export default async function MenuPage({
                       {String(i + 1).padStart(2, "0")}
                     </p>
                     <div className="mt-4">
-                      <ItemText item={item} />
+                      <ItemText
+                        item={item}
+                        vegLabel={vegLabel}
+                        allergensLabel={allergensLabel}
+                      />
                     </div>
                   </Reveal>
                 </div>
@@ -252,16 +276,28 @@ export default async function MenuPage({
         />
 
         {/* Secondi — compatta con àncora */}
-        <CompactCategory category={secondi} />
+        <CompactCategory
+          category={secondi}
+          vegLabel={vegLabel}
+          allergensLabel={allergensLabel}
+        />
 
         {/* Contorni — compatta */}
-        <CompactCategory category={contorni} />
+        <CompactCategory
+          category={contorni}
+          vegLabel={vegLabel}
+          allergensLabel={allergensLabel}
+        />
 
         {/* Pausa visiva: full-bleed mani al lavoro */}
         <FullBleed shot={shots.menuPausa} height="52svh" tone="warm" />
 
         {/* Dolci — compatta con àncora */}
-        <CompactCategory category={dolci} />
+        <CompactCategory
+          category={dolci}
+          vegLabel={vegLabel}
+          allergensLabel={allergensLabel}
+        />
 
         {/* Carta dei vini */}
         <section aria-labelledby="cat-vini" className="mx-auto max-w-3xl px-6">

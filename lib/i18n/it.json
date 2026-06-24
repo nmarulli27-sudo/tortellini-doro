@@ -13,15 +13,24 @@
       "description": "Le origini, la filosofia e il rito della sfoglia: la storia del Tortellino d'Oro, trattoria d'autore a Milano."
     },
     "contact": {
-      "title": "Contatti | Tortellino d'Oro",
-      "description": "Prenota un tavolo o scrivici: indirizzo, orari, telefono e come raggiungere il Tortellino d'Oro a Milano."
+      "title": "Prenota un tavolo | Tortellino d'Oro",
+      "description": "Prenota online un tavolo al Tortellino d'Oro: scegli data, ora e numero di coperti. Indirizzo, orari e come raggiungerci a Milano."
+    },
+    "eventi": {
+      "title": "Eventi privati | Tortellino d'Oro",
+      "description": "Cene private, banchetti e eventi aziendali al Tortellino d'Oro. Raccontaci la tua occasione: ti ricontattiamo per organizzare insieme ogni dettaglio."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Tortellino d'Oro",
+      "description": "Informativa sul trattamento dei dati personali ai sensi del GDPR: quali dati raccogliamo con le prenotazioni, perché, a chi li comunichiamo e quali sono i tuoi diritti."
     }
   },
   "nav": {
     "home": "Home",
     "menu": "Menu",
     "about": "Chi siamo",
-    "contact": "Contatti",
+    "eventi": "Eventi",
+    "contact": "Prenota",
     "openMenu": "Apri il menu di navigazione",
     "closeMenu": "Chiudi il menu di navigazione"
   },
@@ -313,9 +322,9 @@
     "quote": "La buona cucina è memoria che si rinnova."
   },
   "contactPage": {
-    "eyebrow": "Contatti",
+    "eyebrow": "Prenotazioni",
     "title": "Prenota un tavolo",
-    "subtitle": "Scriveteci per richieste e prenotazioni. Per il giorno stesso, meglio una telefonata.",
+    "subtitle": "Scegli data, ora e numero di coperti: ti confermiamo noi appena possibile. Per il giorno stesso, meglio una telefonata.",
     "infoTitle": "Dove siamo",
     "addressLabel": "Indirizzo",
     "phoneLabel": "Telefono",
@@ -323,26 +332,241 @@
     "hoursTitle": "Orari di apertura",
     "socialTitle": "Seguici",
     "form": {
-      "title": "Scrivici",
-      "name": "Nome",
+      "title": "La tua prenotazione",
+      "name": "Nome e cognome",
       "email": "Email",
       "phone": "Telefono",
-      "subject": "Oggetto",
-      "subjectGeneral": "Richiesta generale",
-      "subjectBooking": "Prenotazione",
-      "message": "Messaggio",
-      "submit": "Invia il messaggio",
-      "note": "Per prenotazioni dello stesso giorno chiamare direttamente.",
-      "mailtoNote": "L'invio apre il vostro client di posta con il messaggio già compilato."
+      "date": "Data",
+      "time": "Ora",
+      "datePlaceholder": "Scegli una data",
+      "timePlaceholder": "Scegli un orario",
+      "lunch": "Pranzo",
+      "dinner": "Cena",
+      "selectDateTime": "Seleziona data e ora per continuare.",
+      "guests": "Coperti",
+      "guestsPlaceholder": "N. persone",
+      "notes": "Note",
+      "notesPlaceholder": "Allergie, occasioni speciali…",
+      "optional": "facoltativo",
+      "submit": "Invia richiesta",
+      "submitting": "Invio in corso…",
+      "successEyebrow": "Prenotazione ricevuta",
+      "successTitle": "Grazie!",
+      "success": "Riceverai una email di conferma appena il ristorante avrà accettato la prenotazione.",
+      "error": "Qualcosa è andato storto. Riprova, oppure chiamaci.",
+      "note": "Per prenotazioni in giornata, chiamaci direttamente."
     },
     "mapTitle": "Come raggiungerci",
     "mapAria": "Mappa con la posizione del ristorante Tortellino d'Oro"
+  },
+  "eventiPage": {
+    "eyebrow": "Eventi privati",
+    "title": "Il vostro evento, tirato a mano",
+    "subtitle": "Cene private, ricorrenze, banchetti e momenti aziendali: apriamo la nostra sala — o solo una parte — per occasioni che meritano la stessa cura della nostra sfoglia.",
+    "intro": {
+      "eyebrow": "Il servizio",
+      "title": "Una sala che diventa la vostra",
+      "body": "Dal tavolo riservato per pochi all'esclusiva dell'intero locale, costruiamo ogni evento attorno a chi lo vive. Stesso laboratorio, stessa pasta fresca tirata a mano ogni mattina, ma un menu e un ritmo pensati solo per voi. Quaranta coperti, non uno di più: ogni occasione ha il suo spazio e il suo tempo."
+    },
+    "formatsTitle": "Le occasioni che ospitiamo",
+    "formats": [
+      {
+        "title": "Cene private",
+        "description": "Compleanni, anniversari, cene di famiglia. Un menu su misura e un angolo di sala tutto vostro, con la cucina che lavora attorno alla vostra serata."
+      },
+      {
+        "title": "Banchetti e ricorrenze",
+        "description": "Battesimi, lauree, brindisi importanti. La sala intera in esclusiva, servizio dedicato e portate pensate insieme, dalla sfoglia al dolce."
+      },
+      {
+        "title": "Eventi aziendali",
+        "description": "Cene di lavoro, presentazioni, pranzi di squadra. Spazi riservati, tempi calibrati sul vostro programma e una cucina che non fa rumore di fondo."
+      }
+    ],
+    "detail": {
+      "eyebrow": "Il menu",
+      "title": "Costruito insieme, piatto per piatto",
+      "body": "Non esiste un menu eventi prestampato. Partiamo dalla stagione e dalla vostra occasione, scegliamo le portate, accordiamo la cantina e teniamo conto di allergie e intolleranze. Voi raccontate l'idea, noi la traduciamo in tavola."
+    },
+    "how": {
+      "eyebrow": "Come funziona",
+      "title": "Dalla richiesta alla tavola",
+      "note": "Ricevuta la vostra richiesta, vi ricontattiamo personalmente per discutere insieme l'organizzazione: data, numero di ospiti, menu e ogni dettaglio dell'evento.",
+      "steps": [
+        {
+          "title": "1 · Raccontateci l'occasione",
+          "body": "Compilate il modulo qui sotto con il tipo di evento e qualche nota: più dettagli ci date, meglio vi rispondiamo."
+        },
+        {
+          "title": "2 · Vi ricontattiamo",
+          "body": "Vi scriviamo o telefoniamo per capire data, numero di ospiti e desideri, e per studiare insieme il menu e gli spazi."
+        },
+        {
+          "title": "3 · Definiamo i dettagli",
+          "body": "Concordiamo menu, tempi e preventivo. Quando tutto torna, la data è vostra."
+        }
+      ]
+    },
+    "form": {
+      "title": "Richiedi informazioni",
+      "name": "Nome e cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "eventType": "Tipo di evento",
+      "eventTypePlaceholder": "Es. cena di compleanno, evento aziendale…",
+      "notes": "Note",
+      "notesPlaceholder": "Data indicativa, numero di ospiti, idee o richieste particolari…",
+      "optional": "facoltativo",
+      "submit": "Invia richiesta",
+      "submitting": "Invio in corso…",
+      "successEyebrow": "Richiesta ricevuta",
+      "successTitle": "Grazie!",
+      "success": "Abbiamo ricevuto la tua richiesta. Ti ricontatteremo presto per organizzare insieme l'evento.",
+      "error": "Qualcosa è andato storto. Riprova, oppure chiamaci.",
+      "note": "Ti ricontatteremo per definire insieme ogni dettaglio dell'evento."
+    }
+  },
+  "confermaPage": {
+    "eyebrow": "Prenotazione",
+    "pendingTitle": "Conferma la prenotazione",
+    "pendingIntro": "Controlla i dettagli e scegli se confermare o rifiutare. Il cliente riceverà una email solo dopo la conferma.",
+    "confirmedTitle": "Prenotazione confermata",
+    "confirmedIntro": "Abbiamo inviato la conferma al cliente. A presto.",
+    "rejectedTitle": "Prenotazione rifiutata",
+    "rejectedIntro": "La prenotazione è stata segnata come rifiutata. Nessuna email è stata inviata al cliente.",
+    "notFoundTitle": "Prenotazione non trovata",
+    "notFoundIntro": "Il link non è valido oppure la prenotazione non esiste più.",
+    "statusLabel": "Stato",
+    "status": {
+      "in_attesa": "In attesa",
+      "confermata": "Confermata",
+      "rifiutata": "Rifiutata"
+    },
+    "fields": {
+      "nome": "Nome",
+      "email": "Email",
+      "telefono": "Telefono",
+      "data": "Data",
+      "ora": "Ora",
+      "coperti": "Coperti",
+      "note": "Note"
+    },
+    "confirm": "Conferma",
+    "reject": "Rifiuta",
+    "empty": "—"
+  },
+  "privacyPage": {
+    "eyebrow": "Informativa privacy",
+    "title": "Privacy Policy",
+    "subtitle": "Come raccogliamo, usiamo e proteggiamo i tuoi dati personali quando prenoti un tavolo o ci contatti.",
+    "updatedLabel": "Ultimo aggiornamento",
+    "updatedDate": "[SEGNAPOSTO — data di pubblicazione]",
+    "intro": "Questa informativa descrive come Tortellino d'Oro tratta i dati personali raccolti tramite questo sito, in particolare con il modulo di prenotazione, ai sensi del Regolamento (UE) 2016/679 (GDPR) e della normativa italiana in materia di protezione dei dati personali.",
+    "tocLabel": "In questa pagina",
+    "controller": {
+      "title": "Titolare del trattamento",
+      "body": "Il titolare del trattamento è Tortellino d'Oro, con sede in Via dei Sarti 12, 20121 Milano. Per qualsiasi richiesta relativa ai tuoi dati personali puoi scriverci all'indirizzo email indicato qui sotto.",
+      "note": "[SEGNAPOSTO — ragione sociale completa, P.IVA e, se nominato, i recapiti del Responsabile della protezione dei dati (DPO).]"
+    },
+    "data": {
+      "title": "Quali dati raccogliamo",
+      "intro": "Tramite il modulo di prenotazione raccogliamo i dati che ci fornisci direttamente:",
+      "items": [
+        "Nome e cognome",
+        "Indirizzo email",
+        "Numero di telefono",
+        "Data e ora della prenotazione",
+        "Numero di coperti",
+        "Note (campo facoltativo)"
+      ]
+    },
+    "health": {
+      "title": "Dati su allergie e intolleranze",
+      "body": [
+        "Il campo note è facoltativo e potrebbe contenere informazioni su allergie o intolleranze alimentari. Queste informazioni costituiscono dati relativi alla salute, una categoria particolare di dati personali ai sensi dell'art. 9 del GDPR.",
+        "Trattiamo questi dati esclusivamente per gestire in sicurezza la tua prenotazione e accoglierti nel modo giusto, e soltanto se sei tu a fornirli spontaneamente, su base volontaria.",
+        "Ti invitiamo a inserire nel campo note solo le informazioni strettamente necessarie e a non comunicare dati sensibili che non siano indispensabili per la prenotazione."
+      ]
+    },
+    "purposes": {
+      "title": "Finalità e basi giuridiche",
+      "intro": "Trattiamo i tuoi dati per le seguenti finalità, ciascuna con la propria base giuridica:",
+      "items": [
+        {
+          "purpose": "Gestire la prenotazione e inviarti la conferma",
+          "basis": "Esecuzione di misure precontrattuali e contrattuali — art. 6.1.b GDPR"
+        },
+        {
+          "purpose": "Conservare lo storico delle prenotazioni e monitorare l'andamento del locale tramite statistiche interne",
+          "basis": "Legittimo interesse del titolare a gestire e migliorare il servizio — art. 6.1.f GDPR"
+        },
+        {
+          "purpose": "Trattare eventuali informazioni su allergie o intolleranze inserite nel campo note",
+          "basis": "Consenso, su base volontaria, per le categorie particolari di dati — art. 9.2.a GDPR"
+        }
+      ]
+    },
+    "recipients": {
+      "title": "A chi comunichiamo i dati",
+      "intro": "Per erogare il servizio ci avvaliamo di alcuni fornitori esterni, che trattano i dati per nostro conto in qualità di responsabili del trattamento:",
+      "items": [
+        {
+          "name": "Supabase",
+          "detail": "Database in cui sono conservate le prenotazioni. I server utilizzati si trovano nell'Unione Europea (Francoforte, Germania): i dati restano all'interno dell'UE."
+        },
+        {
+          "name": "Resend",
+          "detail": "Invio delle email di notifica e di conferma della prenotazione. Il fornitore ha sede negli Stati Uniti: il trattamento può comportare trasferimenti di dati al di fuori dell'UE, basati su Clausole Contrattuali Standard e/o sul Data Privacy Framework UE-USA."
+        },
+        {
+          "name": "Cloudflare",
+          "detail": "Hosting e distribuzione del sito. Anche in questo caso possono verificarsi trasferimenti di dati al di fuori dell'UE, basati su Clausole Contrattuali Standard e/o sul Data Privacy Framework UE-USA."
+        }
+      ],
+      "note": "Non vendiamo né cediamo i tuoi dati a terzi per finalità di marketing."
+    },
+    "transfers": {
+      "title": "Trasferimenti fuori dall'Unione Europea",
+      "body": "Alcuni fornitori possono trattare i dati al di fuori dell'Unione Europea. In questi casi il trasferimento avviene nel rispetto del GDPR, sulla base di garanzie adeguate quali le Clausole Contrattuali Standard approvate dalla Commissione europea e/o l'adesione del fornitore al Data Privacy Framework UE-USA."
+    },
+    "cookies": {
+      "title": "Cookie",
+      "body": [
+        "Questo sito utilizza esclusivamente cookie tecnici ed essenziali. In particolare, viene impiegato un solo cookie di sessione, usato unicamente dallo staff del ristorante per accedere all'area riservata.",
+        "Non utilizziamo cookie di profilazione né cookie analitici per i visitatori. Per questo motivo, per la navigazione del sito non è richiesto alcun banner di consenso ai cookie."
+      ]
+    },
+    "retention": {
+      "title": "Per quanto tempo conserviamo i dati",
+      "body": "Conserviamo i dati delle prenotazioni per il tempo necessario a gestire la prenotazione e ad adempiere agli obblighi di legge (ad esempio contabili e fiscali), dopodiché i dati vengono cancellati o resi anonimi.",
+      "note": "[SEGNAPOSTO — periodo di conservazione preciso da concordare con il ristorante, ad es. mesi per le statistiche interne e anni per i documenti con rilevanza fiscale.]"
+    },
+    "rights": {
+      "title": "I tuoi diritti",
+      "intro": "In qualità di interessato, in qualsiasi momento puoi esercitare i diritti previsti dagli artt. 15-22 del GDPR:",
+      "items": [
+        "Accesso ai tuoi dati personali",
+        "Rettifica dei dati inesatti o incompleti",
+        "Cancellazione dei dati (diritto all'oblio)",
+        "Limitazione del trattamento",
+        "Portabilità dei dati",
+        "Opposizione al trattamento fondato sul legittimo interesse",
+        "Revoca del consenso prestato, in ogni momento e senza pregiudicare la liceità del trattamento svolto prima della revoca"
+      ],
+      "contactLabel": "Per esercitare questi diritti scrivici a",
+      "complaint": "Hai inoltre il diritto di proporre reclamo all'autorità di controllo competente, il Garante per la protezione dei dati personali (www.garanteprivacy.it), qualora ritenga che il trattamento dei tuoi dati violi la normativa vigente."
+    },
+    "changes": {
+      "title": "Modifiche a questa informativa",
+      "body": "Potremmo aggiornare questa informativa nel tempo. La versione in vigore è sempre quella pubblicata su questa pagina, con indicazione della data di ultimo aggiornamento."
+    }
   },
   "footer": {
     "contactTitle": "Contatti",
     "hoursTitle": "Orari",
     "socialTitle": "Social",
     "tagline": "Trattoria d'autore · Pasta fresca tirata a mano",
+    "privacy": "Privacy",
     "legal": "© Tortellino d'Oro — P.IVA 00000000000",
     "credits": "Sito realizzato con cura."
   }

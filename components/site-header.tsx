@@ -13,6 +13,7 @@ type NavLabels = {
   home: string;
   menu: string;
   about: string;
+  eventi: string;
   contact: string;
   openMenu: string;
   closeMenu: string;
@@ -28,6 +29,13 @@ export function SiteHeader({
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [lastPath, setLastPath] = useState(pathname);
+
+  // Chiude il menu mobile al cambio rotta (reset in fase di render, non in un effetto).
+  if (pathname !== lastPath) {
+    setLastPath(pathname);
+    setOpen(false);
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -35,10 +43,6 @@ export function SiteHeader({
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -51,7 +55,8 @@ export function SiteHeader({
     { href: `/${locale}`, label: nav.home },
     { href: `/${locale}/menu`, label: nav.menu },
     { href: `/${locale}/chi-siamo`, label: nav.about },
-    { href: `/${locale}/contatti`, label: nav.contact },
+    { href: `/${locale}/eventi`, label: nav.eventi },
+    { href: `/${locale}/prenota`, label: nav.contact },
   ];
 
   const isActive = (href: string) =>
