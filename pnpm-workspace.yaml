@@ -1,9 +1,7 @@
-allowBuilds:
-  esbuild: set this to true or false
-  msw: false
-  sharp: true
-  unrs-resolver: true
-  workerd: set this to true or false
+# Non è un monorepo: questo file serve solo a pnpm 10+/11 per la config
+# (da v11 le impostazioni NON vengono più lette dal campo "pnpm" di package.json).
+# sharp e unrs-resolver hanno build script nativi non necessari a runtime su
+# Cloudflare Workers: ne ignoriamo il build per evitare ERR_PNPM_IGNORED_BUILDS.
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
