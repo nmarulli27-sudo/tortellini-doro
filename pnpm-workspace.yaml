@@ -1,27 +1,20 @@
-# Non è un monorepo: questo file serve solo a pnpm 10+/11 per la config
-# (da v11 le impostazioni NON vengono più lette dal campo "pnpm" di package.json).
+# Non è un monorepo: questo file serve solo a pnpm 10+/11 per la config.
 #
-# Con pnpm 11 ogni dipendenza con build script deve stare esplicitamente in una
-# delle due liste qui sotto, altrimenti `pnpm install` fallisce con
-# ERR_PNPM_IGNORED_BUILDS (anche su Cloudflare, in fresh install).
-
-# Toolchain di build/runtime Cloudflare: lasciamo girare i loro script.
-onlyBuiltDependencies:
-  - esbuild
-  - workerd
-
-# Build script nativi non necessari per il deploy su Cloudflare Workers:
-#   sharp         → ottimizzazione immagini, non usata a runtime su Workers
-#   unrs-resolver → resolver nativo (eslint/oxc), solo in fase di sviluppo
-#   msw           → mock service worker, solo dev/test
-ignoredBuiltDependencies:
-  - sharp
-  - unrs-resolver
-  - msw
+# pnpm 11 NON legge più le impostazioni dal campo "pnpm" di package.json e ha
+# sostituito onlyBuiltDependencies/ignoredBuiltDependencies con `allowBuilds`.
+#
+# Con strictDepBuilds=true (default da pnpm 10.3) ogni dipendenza con build
+# script DEVE essere elencata qui sotto con true/false, altrimenti `pnpm install`
+# fallisce con ERR_PNPM_IGNORED_BUILDS (anche su Cloudflare, in fresh install).
 
 allowBuilds:
-  esbuild: set this to true or false
-  msw: set this to true or false
-  sharp: set this to true or false
-  unrs-resolver: set this to true or false
-  workerd: set this to true or false
+  # Toolchain di build/runtime Cloudflare: lasciamo girare i loro script.
+  esbuild: true
+  workerd: true
+  # Build script nativi non necessari per il deploy su Cloudflare Workers:
+  #   sharp         → ottimizzazione immagini, non usata a runtime su Workers
+  #   unrs-resolver → resolver nativo (eslint/oxc), solo in fase di sviluppo
+  #   msw           → mock service worker, solo dev/test
+  sharp: false
+  unrs-resolver: false
+  msw: false
