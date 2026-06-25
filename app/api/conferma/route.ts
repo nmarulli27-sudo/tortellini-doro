@@ -20,7 +20,7 @@ export async function POST(request: Request) {
   const localeRaw = form.get("locale")?.toString() ?? "";
   const locale = isLocale(localeRaw) ? localeRaw : defaultLocale;
 
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? new URL(request.url).origin;
+  const base = new URL(request.url).origin;
   const back = (tok: string) =>
     NextResponse.redirect(new URL(`/${locale}/conferma/${tok}`, base), 303);
 

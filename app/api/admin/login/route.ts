@@ -12,7 +12,9 @@ export async function POST(request: Request) {
   const form = await request.formData();
   const password = form.get("password")?.toString() ?? "";
 
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? new URL(request.url).origin;
+  // Redirect relativo all'host della richiesta: niente env var da sbagliare,
+  // funziona su workers.dev e su un eventuale dominio custom.
+  const base = new URL(request.url).origin;
 
   // Password errata: torno al login con l'avviso (nessun cookie impostato).
   if (!verifyPassword(password)) {

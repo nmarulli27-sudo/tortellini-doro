@@ -72,8 +72,7 @@ export async function POST(request: Request) {
   // Notifica al ristorante. Best-effort: la prenotazione è già salvata,
   // un errore d'invio non deve far fallire la richiesta del cliente.
   try {
-    const base =
-      process.env.NEXT_PUBLIC_SITE_URL ?? new URL(request.url).origin;
+    const base = new URL(request.url).origin;
     const confirmUrl = `${base}/${locale}/conferma/${row.token}`;
     await resend.emails.send({
       from: "onboarding@resend.dev",
