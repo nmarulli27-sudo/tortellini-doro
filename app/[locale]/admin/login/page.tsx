@@ -58,7 +58,9 @@ export default async function AdminLoginPage({
             role="alert"
             className="mt-5 border border-bordeaux/40 bg-bordeaux/10 px-4 py-3 text-sm text-cream"
           >
-            Password errata. Riprova.
+            {error === "config"
+              ? "Login non configurato sul server: imposta ADMIN_PASSWORD e ADMIN_SESSION_SECRET come variabili del Worker su Cloudflare."
+              : "Password errata. Riprova."}
           </p>
         )}
       </div>

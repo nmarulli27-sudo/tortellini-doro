@@ -3,6 +3,7 @@ import {
   ADMIN_COOKIE,
   ADMIN_SESSION_MAX_AGE,
   adminSessionValue,
+  isAdminPasswordConfigured,
   verifyPassword,
 } from "@/lib/admin-auth";
 
@@ -15,6 +16,15 @@ export async function POST(request: Request) {
   // Redirect relativo all'host della richiesta: niente env var da sbagliare,
   // funziona su workers.dev e su un eventuale dominio custom.
   const base = new URL(request.url).origin;
+
+  // Variabile non impostata sul Worker: messaggio diverso, così si capisce
+  // che è un problema di configurazione e non di password.
+  if (!isAdminPasswordConfigured()) {
+    return NextResponse.redirect(
+      new URL("/it/admin/login?error=config", base),
+      303,
+    );
+  }
 
   // Password errata: torno al login con l'avviso (nessun cookie impostato).
   if (!verifyPassword(password)) {
